@@ -8,3 +8,16 @@
        +++
       +++++
 =end
+
+#Ingresar caracter
+print "Ingresa un caracter"
+c = gets.chomp #c recibe lo que el usuario escriba
+c = c[0] #Solo almacenamos el primero caracter..
+
+print "Ingrese un número: " #Pedimos al usuario el numero
+n = gets.chomp.to_i.abs #Recibimos el numero y lo pasamos a entero y a un numero absoluto
+
+#Hacemos un for del rango de 1 hasta el numero para pintar los caracteres
+for i in 1..n
+  puts " " * (n - i) #Al numero le vamos a restar la iteracion
+end
